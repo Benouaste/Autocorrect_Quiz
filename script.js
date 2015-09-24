@@ -13,7 +13,7 @@ function submitAnswers() {
     // Validation
     for (i = 1; i <= total ; i++) {
         if (eval('q'+i) == null || eval('q'+i) == '') {
-            alert('You missed question '+i);
+            alert('Vous n'avez pas répondu à la question '+i);
             return false;
         }
     }
@@ -31,7 +31,7 @@ function submitAnswers() {
     // Affichage des résultats
     var results = document.getElementById('results');
     results.innerHTML = '<h3>You scored <span>'+score+'</span> out of <span>'+total+'</span></h3>';
-    alert('You scored '+score+' out of '+total+' .');
+    alert('Votre score est de '+score+' sur '+total+' .');
     
     return false;
 }
